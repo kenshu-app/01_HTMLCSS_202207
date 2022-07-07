@@ -21,8 +21,37 @@ a {
   letter-spacing: 0.15em;
 }
 
+a:link {
+  color: #422;
+  font-weight: bold;
+}
+
+a:visited {
+  color: #333;
+}
+
+a:hover,
+a:active {
+  color: #933;
+}
+
 em {
   font-style: normal;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
 }
 
 th {
@@ -36,13 +65,11 @@ th {
 
 .gl-header {
   height: 140px;
-  background: linear-gradient(
-                110deg,
-                #000 0%,
-                rgba(27, 18, 18, .7) 70%,
-                rgba(27, 18, 18, .8) 100%
-              ),
-              url("../images/wood.jpg") 0 0 / contain repeat-x;
+  background: linear-gradient(110deg,
+      #000 0%,
+      rgba(27, 18, 18, .7) 70%,
+      rgba(27, 18, 18, .8) 100%),
+    url("../images/wood.jpg") 0 0 / contain repeat-x;
   background-blend-mode: hard-light;
 }
 
@@ -70,4 +97,27 @@ th {
   height: 640px;
   background: url("../images/main.jpg") center top / cover no-repeat;
   box-shadow: inset 0 2px 5px #000;
+}
+
+.top-time li,
+.top-rank li {
+  border-bottom: 1px dotted #ccc;
+}
+
+.top-side a:hover {
+  opacity: .7;
+}
+
+/*-------------------------
+  メニュー
+-------------------------*/
+
+.menu {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 0 3px #ccc;
+}
+
+.menu li {
+  border-bottom: 1px dotted #ccc;
 }
