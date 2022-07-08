@@ -43,6 +43,7 @@ em {
 ol,
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 table {
@@ -57,6 +58,23 @@ tr:nth-of-type(odd) {
 th,
 td {
   border: 1px solid #ccc;
+  padding: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+select,
+textarea {
+  width: 600px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 10px 0 30px;
 }
 
 th {
@@ -70,6 +88,7 @@ th {
 
 .gl-header {
   height: 140px;
+  padding-top: 15px;
   background: linear-gradient(110deg,
       #000 0%,
       rgba(27, 18, 18, .7) 70%,
@@ -87,6 +106,8 @@ th {
 
 .gl-footer {
   height: 120px;
+  padding-top: 50px;
+  margin-top: 50px;
   background-color: #211;
   color: #ccc;
   letter-spacing: .3em;
@@ -112,6 +133,7 @@ th {
 .top-rank a[href$="#other"]::after {
   font-family: FontAwesome;
   content: "\f18e";
+  margin-left: 5px;
 }
 
 .top-rank a[href$="#other"] {
@@ -133,6 +155,19 @@ th {
 }
 
 /*-------------------------
+  セカンド
+-------------------------*/
+
+.menus > h2,
+.info > h2,
+.movie > h2,
+.map > h2,
+.contact > h2 {
+  margin: 50px 0 20px;
+  border-bottom: 2px dotted #422;
+}
+
+/*-------------------------
   メニュー
 -------------------------*/
 
@@ -141,6 +176,8 @@ th {
 }
 
 .menu {
+  padding: 20px 30px;
+  margin-bottom: 100px;
   border: 1px solid #ccc;
   border-radius: 3px;
   box-shadow: 0 0 3px #ccc;
