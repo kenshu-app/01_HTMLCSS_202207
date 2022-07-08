@@ -61,6 +61,11 @@ td {
   padding: 20px;
 }
 
+th {
+  vertical-align: top;
+  text-align: left;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="submit"],
@@ -77,14 +82,14 @@ input[type="checkbox"] {
   margin: 0 10px 0 30px;
 }
 
-th {
-  vertical-align: top;
-  text-align: left;
-}
-
 /*-------------------------
   グローバル
 -------------------------*/
+
+.container {
+  max-width: 980px;
+  margin: auto;
+}
 
 .gl-header {
   height: 140px;
