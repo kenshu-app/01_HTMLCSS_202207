@@ -82,6 +82,12 @@ input[type="checkbox"] {
   margin: 0 10px 0 30px;
 }
 
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 /*-------------------------
   グローバル
 -------------------------*/
@@ -126,8 +132,37 @@ input[type="checkbox"] {
 
 .top-welcome {
   height: 640px;
+  margin-bottom: 30px;
   background: url("../images/main.jpg") center top / cover no-repeat;
   box-shadow: inset 0 2px 5px #000;
+}
+
+.top-main {
+  float: left;
+  width: 660px;
+}
+
+.top-side {
+  float: right;
+  width: 300px;
+}
+
+.top-time,
+.top-rank {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc;
+  padding: 20px 30px 20px 400px;
+  margin-bottom: 30px;
+  height: 300px;
+}
+
+.top-time {
+  background: url("../images/time.jpg") -290px 0 no-repeat;
+}
+
+.top-rank {
+  background: url("../images/rank.jpg") -290px 0 no-repeat;
 }
 
 .top-time li,
@@ -163,11 +198,11 @@ input[type="checkbox"] {
   セカンド
 -------------------------*/
 
-.menus > h2,
-.info > h2,
-.movie > h2,
-.map > h2,
-.contact > h2 {
+.menus>h2,
+.info>h2,
+.movie>h2,
+.map>h2,
+.contact>h2 {
   margin: 50px 0 20px;
   border-bottom: 2px dotted #422;
 }
