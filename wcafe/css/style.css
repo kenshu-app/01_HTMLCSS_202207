@@ -15,6 +15,7 @@ body {
   font-size: 1.6rem;
   line-height: 2;
   font-feature-settings: "palt";
+  text-size-adjust: 100%;
 }
 
 a {
@@ -29,6 +30,10 @@ a:link {
 
 a:visited {
   color: #333;
+}
+
+:hover {
+  transition: .4s ease;
 }
 
 a:hover,
@@ -61,6 +66,12 @@ td {
   padding: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  th,td {
+    padding: 10px;
+  }
+}
+
 th {
   vertical-align: top;
   text-align: left;
@@ -77,6 +88,18 @@ textarea {
   border-radius: 3px;
 }
 
+@media screen and (max-width: 768px) {
+
+  input[type="text"],
+  input[type="email"],
+  input[type="submit"],
+  select,
+  textarea {
+    width: 100%;
+  }
+}
+
+
 input[type="radio"],
 input[type="checkbox"] {
   margin: 0 10px 0 30px;
@@ -88,6 +111,42 @@ input[type="checkbox"] {
   clear: both;
 }
 
+.jBounceIn {
+  transition: .6s cubic-bezier(.47, 2.02, .31, -0.36);
+}
+
+.jBounceIn:hover,
+.jbounceIn:focus,
+.jbounceIn:active {
+  transform: scale(1.1);
+}
+
+.jBounceUp {
+  transition: margin .3s ease-out
+}
+
+.jBounceUp:hover {
+  animation: jBounceUp-frames 1s;
+}
+
+@keyframes jBounceUp-frames {
+
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+  }
+}
+
 /*-------------------------
   グローバル
 -------------------------*/
@@ -95,6 +154,12 @@ input[type="checkbox"] {
 .container {
   max-width: 980px;
   margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 94%;
+  }
 }
 
 .gl-header {
@@ -108,11 +173,25 @@ input[type="checkbox"] {
   background-blend-mode: hard-light;
 }
 
+@media screen and (max-width: 768px) {
+  .gl-header {
+    height: auto;
+    margin-bottom: -10px;
+    background-size: cover;
+  }
+}
+
 .logo {
   width: 200px;
   height: 65px;
   margin-bottom: 15px;
   background: url("../images/logo.png") 0 0 / cover no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    margin: auto;
+  }
 }
 
 .logo a {
@@ -145,6 +224,19 @@ input[type="checkbox"] {
   color: #a86;
 }
 
+@media screen and (max-width: 768px) {
+  .gl-nav ul {
+    display: block;
+  }
+
+  .gl-nav ul li {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-right: none;
+  }
+}
+
 .gl-footer {
   height: 120px;
   padding-top: 50px;
@@ -156,6 +248,13 @@ input[type="checkbox"] {
   background: #211 url("../images/grunge.jpg") 0 top repeat-x;
 }
 
+@media screen and (max-width: 768px) {
+  .gl-footer {
+    line-height: 1.5;
+    height: 40vw;
+  }
+}
+
 /*-------------------------
   トップ
 -------------------------*/
@@ -165,6 +264,13 @@ input[type="checkbox"] {
   margin-bottom: 30px;
   background: url("../images/main.jpg") center top / cover no-repeat;
   box-shadow: inset 0 2px 5px #000;
+}
+
+@media screen and (max-width: 768px) {
+  .top-welcome {
+    height: 1280px;
+    background-image: url("../images/main_sp.jpg");
+  }
 }
 
 .top-parent {
@@ -181,7 +287,7 @@ input[type="checkbox"] {
   line-height: 2.4;
   letter-spacing: .3em;
   text-shadow: 0 0 5px #422,
-                0 0 10px #000;
+    0 0 10px #000;
   background: url("../images/logo2.png") 0 -100px / 90% no-repeat;
   filter: drop-shadow(0 0 5px #422);
 }
@@ -190,9 +296,30 @@ input[type="checkbox"] {
   font-size: 4.8rem;
 }
 
+@media screen and (max-width: 768px) {
+  .top-catch {
+    left: 0;
+    padding: 80vw 0;
+    line-height: 2;
+    text-align: justify;
+    background-position: center top;
+    background-size: contain;
+  }
+
+  .top-catch br {
+    display: none;
+  }
+}
+
 .top-main {
   float: left;
   width: 660px;
+}
+
+@media screen and (max-width: 768px) {
+  .top-main {
+    width: 100%;
+  }
 }
 
 .top-order {
@@ -218,6 +345,16 @@ input[type="checkbox"] {
 .top-rank {
   background: url("../images/rank.jpg") -290px 0 no-repeat;
   order: 1;
+}
+
+@media screen and (max-width: 768px) {
+
+  .top-time,
+  .top-rank {
+    height: 680px;
+    padding: 400px 20px 20px;
+    background-position: center top;
+  }
 }
 
 .top-time li,
@@ -259,6 +396,20 @@ input[type="checkbox"] {
   color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+  .top-news dl {
+    margin-bottom: 30px;
+  }
+
+  .top-news dt {
+    width: 30%;
+  }
+
+  .top-news dd {
+    width: 70%;
+  }
+}
+
 .top-side {
   float: right;
   width: 300px;
@@ -266,6 +417,13 @@ input[type="checkbox"] {
 
 .top-side a:hover {
   opacity: .7;
+}
+
+@media screen and (max-width: 768px) {
+  .top-side {
+    margin: auto;
+    float: none;
+  }
 }
 
 /*-------------------------
@@ -317,26 +475,30 @@ input[type="checkbox"] {
 .menu:nth-of-type(1)::after {
   background-image: url("../images/m_morning.jpg");
 }
+
 .menu:nth-of-type(2)::after {
   background-image: url("../images/m_lunch.jpg");
 }
+
 .menu:nth-of-type(3)::after {
   background-image: url("../images/m_dessert.jpg");
 }
+
 .menu:nth-of-type(4)::after {
   background-image: url("../images/m_other.jpg");
 }
+
 .menu:nth-of-type(5)::after {
   background-image: url("../images/m_drink.jpg");
 }
 
-.menus > ul {
+.menus>ul {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2px;
 }
 
-.menus > ul li a {
+.menus>ul li a {
   padding: 10px;
   border-top: 1px solid #ccc;
   border-left: 1px solid #ccc;
@@ -344,9 +506,27 @@ input[type="checkbox"] {
   border-radius: 3px 3px 0 0;
 }
 
+@media screen and (max-width: 768px) {
+  .menus>ul, .menus>ul li a {
+    display: block;
+  }
+}
+
 .menu li {
   border-bottom: 1px dotted #ccc;
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    margin-bottom: 50vw;
+  }
+
+  .menu::after {
+    width: 90%;
+    height: 45vw;
+    top: 95%;
+  }
 }
 
 /*-------------------------
