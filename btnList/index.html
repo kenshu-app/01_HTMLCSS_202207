@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Button list</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap-reboot.min.css">
+        <style>
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+                display: flex;
+            }
+
+            a {
+                display: block;
+                padding: 10px 24px;
+                color: #fff;
+                font-weight: bold;
+                box-shadow: 0 0 3px #999;
+                background-color: #333;
+            }
+
+            a:hover {
+                transition: .3s ease;
+                color: #fff;
+                opacity: .7;
+            }
+
+            .btn01 li~li {
+                margin-left: 10px;
+            }
+
+            .btn01 a {
+                border-radius: 3px;
+            }
+
+            .btn01 li:nth-of-type(1) a {
+                background-color: red;
+            }
+
+            .btn01 li:nth-of-type(2) a {
+                background-color: blue;
+            }
+
+            .btn01 li:nth-of-type(3) a {
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- ul.btn01>li*3>a[href=#]{ボタン$$} -->
+        <ul class="btn01">
+            <li><a href="#">ボタン01</a></li>
+            <li><a href="#">ボタン02</a></li>
+            <li><a href="#">ボタン03</a></li>
+        </ul>
+    </body>
+</html>
