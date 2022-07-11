@@ -172,9 +172,9 @@ input[type="checkbox"] {
   width: 660px;
 }
 
-.top-side {
-  float: right;
-  width: 300px;
+.top-order {
+  display: flex;
+  flex-direction: column;
 }
 
 .top-time,
@@ -189,10 +189,12 @@ input[type="checkbox"] {
 
 .top-time {
   background: url("../images/time.jpg") -290px 0 no-repeat;
+  order: 2;
 }
 
 .top-rank {
   background: url("../images/rank.jpg") -290px 0 no-repeat;
+  order: 1;
 }
 
 .top-time li,
@@ -210,6 +212,20 @@ input[type="checkbox"] {
   letter-spacing: 0;
 }
 
+.top-news dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top-news dt {
+  width: 18%;
+}
+
+.top-news dd {
+  width: 82%;
+  border-bottom: 2px dotted #ccc;
+}
+
 .top-news dd:first-of-type::after {
   content: 'NEW!';
   padding: 5px;
@@ -218,6 +234,11 @@ input[type="checkbox"] {
   font-weight: bold;
   text-align: center;
   color: #fff;
+}
+
+.top-side {
+  float: right;
+  width: 300px;
 }
 
 .top-side a:hover {
@@ -251,6 +272,20 @@ input[type="checkbox"] {
   border: 1px solid #ccc;
   border-radius: 3px;
   box-shadow: 0 0 3px #ccc;
+}
+
+.menus > ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.menus > ul li a {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-radius: 3px 3px 0 0;
 }
 
 .menu li {
