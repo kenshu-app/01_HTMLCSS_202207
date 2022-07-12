@@ -7,10 +7,15 @@
         <title>Button list</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap-reboot.min.css">
         <style>
+            /*-------------------------
+                初期値
+            -------------------------*/
             ul {
                 list-style-type: none;
                 padding-left: 0;
                 display: flex;
+                width: 400px;
+                margin: 100px auto;
             }
 
             a {
@@ -19,7 +24,6 @@
                 color: #fff;
                 font-weight: bold;
                 box-shadow: 0 0 3px #999;
-                background-color: #333;
             }
 
             a:hover {
@@ -28,6 +32,9 @@
                 opacity: .7;
             }
 
+            /*-------------------------
+                ボタン01
+            -------------------------*/
             .btn01 li~li {
                 margin-left: 10px;
             }
@@ -47,11 +54,36 @@
             .btn01 li:nth-of-type(3) a {
                 background-color: green;
             }
+
+            /*-------------------------
+                ボタン02
+            -------------------------*/
+            .btn02 a {
+                background: linear-gradient(#eee, #ccc);
+                color: #666;
+            }
+
+            .btn02 li~li a {
+                border-left: 1px solid rgba(255, 255, 255, .5);
+            }
+
+            .btn02 li:first-of-type a {
+                border-radius: 3px 0 0 3px;
+            }
+
+            .btn02 li:last-of-type a {
+                border-radius: 0 3px 3px 0;
+            }
         </style>
     </head>
     <body>
         <!-- ul.btn01>li*3>a[href=#]{ボタン$$} -->
         <ul class="btn01">
+            <li><a href="#">ボタン01</a></li>
+            <li><a href="#">ボタン02</a></li>
+            <li><a href="#">ボタン03</a></li>
+        </ul>
+        <ul class="btn02">
             <li><a href="#">ボタン01</a></li>
             <li><a href="#">ボタン02</a></li>
             <li><a href="#">ボタン03</a></li>
