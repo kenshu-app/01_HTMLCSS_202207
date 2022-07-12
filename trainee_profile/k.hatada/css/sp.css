@@ -1,0 +1,180 @@
+
+/********************** スマホ用css ***************************/
+
+@media screen and (max-width:767px){
+
+#wrapper{
+	
+}
+
+#wrapper:before{
+	content:"";
+	display:block;
+	position:fixed;
+	top:0;
+	left:0;
+	-webkit-transform:translate3d(0, 0, -1px);
+	transform: translate3d(0, 0, -1px);
+	width:100%;
+	height:100vh;
+	background:#C7C7C7 url(../images/macbook.jpg);/**** 自分の好きな画像を設定してください ****/
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-blend-mode:screen;
+	background-position:center;
+	z-index: -1;
+}
+
+
+#profile01{
+	background:rgba(255,255,255,0.5);
+}
+
+h2.your_name{
+	font-size:200%;
+	letter-spacing: 0.2em;
+	color:#262626;
+	margin-top:0;
+	text-align: center;
+}
+
+h2.your_name span {
+	font-size: 60%;
+	display: block;
+}
+
+.profile01_inner{
+	width:90%;
+	margin:0 auto;
+	padding:7% 0;
+}
+
+.profile01_inner_lr{
+}
+
+.profile01_l{
+	width:50%;
+	margin: 0 auto;
+}
+
+.your_picture{
+	background:url(../images/hatada.jpg)no-repeat center;/**** 自分が映っている写真を設定してください ****/
+	border-radius:50%;
+	padding:50%;
+	background-size: cover;
+	box-shadow:0px 1px 2px 0px #989898 inset;
+}
+
+.profile01_r{
+	width:90%;
+	margin:0 auto;
+}
+
+.profile01_r dl{
+	font-size:120%;
+	letter-spacing:0.1em;
+	color:#262626;
+	display:flex;
+	justify-content:space-between;
+}
+
+.profile01_r dt{
+	font-weight:600;
+}
+
+.profile01_r dd{
+	font-weight:400;
+}
+
+#profile02{
+	background:rgba(136, 133, 106, 0.8);
+	overflow: hidden;
+}
+
+.profile02_inner{
+}
+
+.profile02_l{
+	width:90%;
+	margin:0 auto;
+}
+
+.profile02_l_inner{
+	padding:5% 0 7%; 
+}
+
+.profile02_l dl{
+	font-size:120%;
+	letter-spacing:0.1em;
+	color:#FFFFFF;
+	margin:2em 0;
+	display:flex;
+	justify-content:space-between;
+	align-items: flex-start;
+}
+
+.profile02_l dt{
+	width:35%;
+	font-weight:600;
+}
+
+.profile02_l dd{
+	width:60%;
+	text-align: left;
+	font-weight:400;
+}
+
+.profile02_r{
+	width:100%;
+}
+
+.favorite_picture01{
+	background:url(../images/imawano.jpg)no-repeat center;/**** 自分の好きな写真を設定してください ****/
+	padding:30% 0;
+	background-size:cover;
+}
+
+.favorite_picture02{
+	background:url(../images/kimen.jpg)no-repeat center;/**** 自分の好きな写真を設定してください ****/
+	padding:30% 0;
+	background-size:cover;
+}
+
+#profile03{
+	background:rgba(255,255,255,0.5);
+}
+
+#profile03 h3{
+	font-size:150%;
+	letter-spacing: 0.2em;
+	color:#262626;
+}
+
+.profile03_inner{
+	
+}
+
+.profile03_l{
+	width:100%;
+}
+
+.profile03_l_inner{
+	margin:0 auto;
+	padding:10%;
+}
+
+.profile03_l_inner p{
+	font-weight:400;
+}
+
+.profile03_r{
+	width:100%;
+}
+
+.favorite_picture03{
+	background:url(../images/coffee.jpg)no-repeat center;/**** 自分の好きな写真を設定してください ****/
+	padding:50% 0;
+	background-size:cover;
+}
+
+}

@@ -1,0 +1,154 @@
+
+*{
+	font-family: -apple-system, BlinkMacSystemFont,"Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", "YuGothic", "Meiryo", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	margin:0;
+	padding:0;
+}
+
+img{
+	border:0;
+}
+
+header{
+	background:#007DB3 url(../images/paper_gb.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-blend-mode:multiply;
+	display:flex;
+	justify-content:space-between;
+	align-items:flex-end;
+	padding:1em;
+}
+
+header a{
+	color:#FFFFFF;
+	font-weight:500;
+	font-size:120%;
+	letter-spacing:0.1em;
+	text-decoration:none;
+	transition:.5s;
+}
+
+header a:hover{
+	color:#F1C24D;
+}
+
+footer{
+	background:#007DB3 url(../images/paper_gb.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-blend-mode:multiply;
+	padding:3em 0;
+}
+
+footer p{
+	text-align: center;
+	color:#FFFFFF;
+	font-weight:400;
+}
+
+@media screen and (max-width:767px){
+
+html{
+	font-size:2.5vw;
+}
+
+.page_title{
+	width:100px;
+}
+
+.page_title span{
+	font-weight:500;
+	color:#FFFFFF;
+	letter-spacing:0.1em;
+	font-size:10px;
+}
+
+.page_title h1.logo{
+	margin:0;
+	line-height:1;
+}
+
+.page_title h1.logo img{
+	width:100%;
+}
+
+}
+
+@media screen and (min-width:768px){
+
+.page_title span{
+	font-weight:500;
+	color:#FFFFFF;
+	letter-spacing:0.1em;
+	white-space: nowrap;
+	font-size:14px;
+}
+
+.page_title{
+	width:140px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.page_title h1.logo{
+	margin:0;
+	line-height:1;
+}
+
+.page_title h1.logo img{
+	width:100%;
+}
+
+}
+
+@media screen and (min-width:768px) and (max-width:1100px){
+
+html{
+	font-size:1.4vw;
+}
+
+}
+
+@media screen and (min-width:1101px) and (max-width:1300px){
+
+html{
+	font-size:1.3vw;
+}
+
+}
+
+@media screen and (min-width:1301px) and (max-width:1500px){
+
+html{
+	font-size:1.2vw;
+}
+
+}
+
+@media screen and (min-width:1501px) and (max-width:1800px){
+
+html{
+	font-size:1.1vw;
+}
+
+}
+
+@media screen and (min-width:1801px){
+
+html{
+	font-size:1vw;
+}
+
+}
+
