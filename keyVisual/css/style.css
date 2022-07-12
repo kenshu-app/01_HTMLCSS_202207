@@ -105,12 +105,12 @@
 .gl-nav li:nth-of-type(5) a:hover {background-image: url("../images/gnav/h/btn05.jpg");}
 .gl-nav li:nth-of-type(6) a:hover {background-image: url("../images/gnav/h/btn06.jpg");}
 
-.gl-nav li:nth-of-type(1)         {background-image: url("../images/gnav/btn01.jpg");}
-.gl-nav li:nth-of-type(2)         {background-image: url("../images/gnav/btn02.jpg");}
-.gl-nav li:nth-of-type(3)         {background-image: url("../images/gnav/btn03.jpg");}
-.gl-nav li:nth-of-type(4)         {background-image: url("../images/gnav/btn04.jpg");}
-.gl-nav li:nth-of-type(5)         {background-image: url("../images/gnav/btn05.jpg");}
-.gl-nav li:nth-of-type(6)         {background-image: url("../images/gnav/btn06.jpg");}
+.gl-nav li:nth-of-type(1)         {background-image: url("../images/gnav/c/btn01.jpg");}
+.gl-nav li:nth-of-type(2)         {background-image: url("../images/gnav/c/btn02.jpg");}
+.gl-nav li:nth-of-type(3)         {background-image: url("../images/gnav/c/btn03.jpg");}
+.gl-nav li:nth-of-type(4)         {background-image: url("../images/gnav/c/btn04.jpg");}
+.gl-nav li:nth-of-type(5)         {background-image: url("../images/gnav/c/btn05.jpg");}
+.gl-nav li:nth-of-type(6)         {background-image: url("../images/gnav/c/btn06.jpg");}
 
 
 .mainBack {
