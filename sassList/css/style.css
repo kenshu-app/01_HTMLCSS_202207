@@ -1,9 +1,8 @@
-@charset "UTF-8";
 .item-list {
   width: 670px;
   margin: 0 auto;
 }
-.item-list ＆__heading {
+.item-list__heading {
   width: 100%;
   padding: 25px 0;
   margin-bottom: 40px;
@@ -19,8 +18,7 @@
           box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
   position: relative;
 }
-.item-list ＆__heading ＆::after,
-.item-list ＆__heading ＆::before {
+.item-list__heading::after, .item-list__heading::before {
   content: "";
   height: 0;
   width: 0;
@@ -29,11 +27,11 @@
   border: 5px solid transparent;
   border-top: 5px solid #5e2b00;
 }
-.item-list ＆__heading ＆::before {
+.item-list__heading::before {
   right: 0;
   border-left: 5px solid #5e2b00;
 }
-.item-list ＆__heading ＆::after {
+.item-list__heading::after {
   left: 0;
   border-right: 5px solid #5e2b00;
 }
